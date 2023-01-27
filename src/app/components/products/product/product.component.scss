@@ -1,0 +1,15 @@
+@import '../../../../assets/scss/breakpoints';
+
+.product {
+    margin: 10px auto;
+    padding: 5px 0 1px 12px;
+    border: 1px #000 solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+    background-color: #ccc;
+    cursor: pointer;
+    width: 50%;
+    @include desktop {
+        width: 25%;
+    }
+}

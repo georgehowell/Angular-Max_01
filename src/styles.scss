@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/scss/breakpoints';
+
+.wrapper {
+    padding: 10px 5%;
+}
+
+button.btn {
+    padding: 2px 20px;
+}
+input {
+    margin-right: 20px;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.move-down {
+    position: relative;
+	animation-name: moveDown;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-out;
+	animation-duration: 1s;
+}
+
+@keyframes moveDown {
+	0% {
+		opacity: 0;
+		// top: 0;
+	}
+	100% {
+		opacity: 1;
+		// top: 30px;
+	}
+}
