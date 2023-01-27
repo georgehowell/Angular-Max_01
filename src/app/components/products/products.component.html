@@ -12,4 +12,26 @@
     [productName]="product">
     </app-product>
 </div>
+
+<div class="wrapper">
+<div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let num of [1,2,3,4,5,6,7]">
+
+        <mat-card class="mat-elevation-z4">
+            <mat-card-header>
+                <mat-card-title>Mountains</mat-card-title>
+                <img src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="placeholder image" class="resp-img" />
+                <mat-card-content>The quick brown fox jumps over the lazy dog.</mat-card-content>
+                <mat-card-actions>
+                    <button mat-button class="mdc-fab mat-mdc-fab mat-accent mat-mdc-button-base">LIKE</button>
+                    <button mat-button class="btn btn-outline-primary">SHARE</button>
+                </mat-card-actions>
+            </mat-card-header>
+        </mat-card>
+        
+    </div>
+</div>
+</div>
+
+
 </section>

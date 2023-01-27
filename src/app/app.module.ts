@@ -10,6 +10,8 @@ import { ProductsService } from './components/products/product/products.service'
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
-    FormsModule
+    FormsModule,
+    FlexLayoutModule,
+    MatCardModule
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent]
