@@ -7,16 +7,22 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductComponent } from './components/products/product/product.component';
 import { ProductsService } from './components/products/product/products.service';
+import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    ProductComponent
+    ProductComponent,
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatToolbarModule,
     FormsModule
   ],
   providers: [ProductsService],

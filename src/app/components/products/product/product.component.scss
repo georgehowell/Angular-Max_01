@@ -8,8 +8,11 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.7);
     background-color: #ccc;
     cursor: pointer;
-    width: 50%;
+    width: 100%;
     @include desktop {
         width: 25%;
+    }
+    @include tablet {
+        width: 50%;
     }
 }
